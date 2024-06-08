@@ -8,7 +8,7 @@ public class Main {
         test();
 
         Button c = new Button("test","btnOk");
-        TextInput i = new TextInput("placeHolder","inputName");
+        TextInput i = new TextInput("inputName");
         Panel pane = new Panel();
         pane.addComponent(c);
         pane.addComponent(i);

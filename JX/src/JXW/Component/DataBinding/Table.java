@@ -9,9 +9,13 @@ public class Table extends Comp {
     public Table() {
         super("table", "");
     }
-
-    /*
-            ![1,2,3]![2,2,2]
+    /**
+     * How to use ...
+     * ! before every []
+     * [] put data inside bracket
+     * i.e ![1,2,3]![2,2,2]
+     * ATTENTION : Does no validation on string
+     * @param data
      */
     public Table(String data) {
         super("table", "");
