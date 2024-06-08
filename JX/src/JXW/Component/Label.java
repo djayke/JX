@@ -6,5 +6,9 @@ public class Label extends Comp {
         super("p", text);
     }
 
+    public void bold(){
+        this.addAttr("style", "bold");
+    }
+
 }
 

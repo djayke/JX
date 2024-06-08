@@ -1,14 +1,11 @@
 package JXW.Component;
 
 public class Nav extends Comp{
-    public Nav(String text, String url) {
-        super("a", text);
-        this.addAttr("href",url);
+    public Nav() {
+        super("nav", "");
     }
 
-    public Nav(String text, String url, String id) {
-        super("a", text);
-        this.addAttr("href",url);
-        this.id(id);
+    public void addLink(String url, String content) {
+        this.addComponent(new Link(content,url));
     }
 }

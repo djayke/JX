@@ -1,17 +1,8 @@
 package JXW.Component;
 
-public class TextInput extends Comp {
+public class TextInput extends AbstractInput {
+
     public TextInput() {
-        super("input", "");
-        this.addAttr("type","text");
+        super("input");
     }
-
-    public TextInput(String placeHolder, String id){
-        super("input", "");
-        this.id(id);
-        this.addAttr("type","text");
-        this.addAttr("placeholder",placeHolder);
-
-    }
-
 }
