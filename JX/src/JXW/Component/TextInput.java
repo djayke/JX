@@ -6,10 +6,11 @@ public class TextInput extends Comp {
         this.addAttr("type","text");
     }
 
-    public TextInput(String id){
-        super("input", "aaa");
+    public TextInput(String placeHolder, String id){
+        super("input", "");
         this.id(id);
         this.addAttr("type","text");
+        this.addAttr("placeholder",placeHolder);
 
     }
 
