@@ -112,6 +112,12 @@ public class XML {
 
     protected void removeNode(XML node){
         this.children.removeIf(n -> n.equals(node));
+        node.parent = null;
+    }
+
+    protected void removeNodeAttribute(String key, String value) {
+        this.children.removeIf(n->n.containsAttributeWithValue(key,value));
+        //TODO:Remove parent
     }
 
     protected List<XML> getNodes(){
@@ -154,7 +160,6 @@ public class XML {
         XML xml = (XML) o;
         return Objects.equals(tag, xml.tag) && Objects.equals(content, xml.content) && Objects.equals(children, xml.children) && Objects.equals(attribute, xml.attribute) && Objects.equals(GENERIC_STRING, xml.GENERIC_STRING);
     }
-
 
 
 
