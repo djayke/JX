@@ -1,0 +1,8 @@
+Read Options if any
+    new
+    build
+    run
+    export
+    install
+
+ADD annotation part of project or use antlr and some sort of file syntax

@@ -1,3 +1,3 @@
 function preprocess(){
-    alert("AAA");
+    alert("preprocess");
 }
