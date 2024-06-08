@@ -1,0 +1,5 @@
+id:btn
+event:[click=func load=init]
+class:[.a .b]
+attr:"some"
+text:"inner"
