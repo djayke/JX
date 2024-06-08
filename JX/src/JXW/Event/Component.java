@@ -2,7 +2,7 @@ package JXW.Event;
 
 public interface Component {
 
-     void render();
+     String render();
 
      boolean isVisible();
 

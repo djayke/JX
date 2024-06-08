@@ -53,8 +53,17 @@ public class HTML extends XML {
      * @param _k attribute name
      * @param _v attribute value
      */
-    public void addAttribute(String _k, String _v){
+    public void addAttr(String _k, String _v){
         this.addAttribute(_k,_v);
+    }
+
+    /**
+     * return attribute value
+     * @param _k
+     * @return
+     */
+    public String getAttributeValue(String _k){
+        return this.getAttributeStringValue(_k);
     }
 
     /**

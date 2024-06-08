@@ -3,22 +3,19 @@ package JXW.Component;
 import Abstract.HTML;
 import JXW.Event.Component;
 
-public abstract class Comp implements Component {
+public abstract class Comp extends HTML implements Component {
 
-    protected HTML comp;
     private boolean enable = true;
 
     public Comp(String type, String text) {
-        this.comp=new HTML(type,text);
+        super(type,text);
         enable=true;
     }
 
-    public void id(String str){
-        comp.id(str);
-    }
-
     @Override
-    public abstract void render();
+    public String render(){
+        return this.toString();
+    }
 
     @Override
     public boolean isVisible() {
