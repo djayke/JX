@@ -1,4 +1,6 @@
-package JXW.Component;
+package JXW.Component.DataBinding;
+
+import JXW.Component.Comp;
 
 import java.util.Arrays;
 import java.util.List;

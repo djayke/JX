@@ -1,5 +1,7 @@
 package JXW.Component;
 
+import JXW.Component.Basic.Link;
+
 public class Nav extends Comp{
     public Nav() {
         super("nav", "");

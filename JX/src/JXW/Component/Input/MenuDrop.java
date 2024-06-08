@@ -1,8 +1,10 @@
-package JXW.Component;
+package JXW.Component.Input;
+
+import JXW.Component.Comp;
 
 import java.util.List;
 
-public class MenuDrop extends Comp{
+public class MenuDrop extends Comp {
     public MenuDrop(String id) {
         super("select", id);
     }

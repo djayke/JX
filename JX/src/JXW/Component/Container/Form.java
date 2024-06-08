@@ -1,8 +1,9 @@
-package JXW.Component;
+package JXW.Component.Container;
 
-import Abstract.HTML;
+import JXW.Component.Comp;
+import JXW.Component.Input.AbstractInput;
 
-public class Form extends Comp{
+public class Form extends Comp {
     public Form(String text) {
         super("form", "");
         this.addComponent(addSubmit());
@@ -16,7 +17,7 @@ public class Form extends Comp{
         return new Submit();
     }
 
-    private class Submit extends AbstractInput{
+    private class Submit extends AbstractInput {
         public Submit() {
             super("submit");
         }

@@ -1,6 +1,8 @@
-package JXW.Component;
+package JXW.Component.Basic;
 
-public class Link extends Comp{
+import JXW.Component.Comp;
+
+public class Link extends Comp {
     public Link(String text, String url) {
         super("a", text);
         this.addAttr("href",url);

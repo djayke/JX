@@ -1,6 +1,8 @@
-package JXW.Component;
+package JXW.Component.Input;
 
-public class AbstractInput extends Comp{
+import JXW.Component.Comp;
+
+public class AbstractInput extends Comp {
     public AbstractInput(String type) {
         super("input", "");
         this.addAttr("type",type);

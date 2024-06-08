@@ -1,4 +1,4 @@
-package JXW.Component;
+package JXW.Component.Input;
 
 public class TextInput extends AbstractInput {
 

@@ -1,4 +1,6 @@
-package JXW.Component;
+package JXW.Component.Basic;
+
+import JXW.Component.Comp;
 
 public class Label extends Comp {
 

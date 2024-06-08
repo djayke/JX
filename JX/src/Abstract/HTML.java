@@ -1,5 +1,8 @@
 package Abstract;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HTML extends XML {
 
     public HTML(String type, String text) {
@@ -113,6 +116,27 @@ public class HTML extends XML {
      */
     public void addComponent(HTML _component){
         this.addNode(_component);
+    }
+
+    /**
+     * Return list of child component if they are HTML component
+     * @return
+     */
+    public List<HTML> getChildNode(){
+        List<HTML> cast = new ArrayList<>();
+        for(XML tag:this.getNodes()){
+            if(!(tag instanceof HTML)){
+                return null;
+            }else{
+                cast.add((HTML)tag);
+            }
+        }
+
+        return cast;
+    }
+
+    public void remove(){
+        this.removeNode(this);
     }
 
     /**

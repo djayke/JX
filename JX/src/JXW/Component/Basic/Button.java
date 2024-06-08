@@ -1,6 +1,8 @@
-package JXW.Component;
+package JXW.Component.Basic;
 
-public class Button extends Comp{
+import JXW.Component.Comp;
+
+public class Button extends Comp {
 
     public Button(String text) {
         super("button", text);
