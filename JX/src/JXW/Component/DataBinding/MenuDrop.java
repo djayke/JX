@@ -1,4 +1,4 @@
-package JXW.Component.Input;
+package JXW.Component.DataBinding;
 
 import JXW.Component.Comp;
 

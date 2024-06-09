@@ -2,26 +2,42 @@ import Abstract.XML;
 import JXW.Component.Basic.Button;
 import JXW.Component.Container.Page;
 import JXW.Component.Container.Panel;
-import JXW.Component.Input.TextInput;
+import JXW.Component.Input.Base.TextInput;
+
 
 public class Main {
     public static void main(String[] args) {
         test();
 
         String funcClick = ""; //TODO WOULD BE COOL
-
-        Button c = new Button("test","btnOk");
-        c.addEvent("onclick", "func()");
-        TextInput i = new TextInput("inputName");
-        Panel pane = new Panel();
-        pane.addComponent(c);
-        pane.addComponent(i);
-
-        Page index = new Page("index");
-        index.setContentPanel(pane);
+        Test t = new Test("index");
+        System.out.println(t.toString());
+    }
 
 
-        System.out.println(index);;
+
+    private static class Test extends Page{
+
+        Panel content = new Panel();
+
+        public Test(String name){
+            super(name);
+            button();
+            textinput();
+            this.setContentPanel(content);
+        }
+
+        void button()
+        {
+            Button c = new Button("test", "btnOk");
+            c.addEvent("onclick", "func()");
+            content.addComponent(c);
+        }
+        void textinput()
+        {
+            TextInput i = new TextInput("inputName");
+            content.addComponent(i);
+        }
 
     }
 

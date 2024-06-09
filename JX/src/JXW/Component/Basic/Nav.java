@@ -1,8 +1,8 @@
-package JXW.Component;
+package JXW.Component.Basic;
 
-import JXW.Component.Basic.Link;
+import JXW.Component.Comp;
 
-public class Nav extends Comp{
+public class Nav extends Comp {
     public Nav() {
         super("nav", "");
     }

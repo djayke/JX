@@ -1,10 +1,10 @@
 package JXW.Component.Container;
 
 import JXW.Component.Comp;
-import JXW.Component.Input.AbstractInput;
+import JXW.Component.Input.Base.AbstractInput;
 
 public class Form extends Comp {
-    public Form(String text) {
+    public Form() {
         super("form", "");
         this.addComponent(addSubmit());
     }

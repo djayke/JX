@@ -3,9 +3,6 @@ package JXW.Component;
 import Abstract.HTML;
 import JXW.Event.Component;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public abstract class Comp extends HTML implements Component {
 
     private boolean enable = true;

@@ -7,3 +7,12 @@ text:"inner"
 
     [id, class, event, text, @RefOtherCompName]
     #compName DerivedHTMLComponent.java
+
+        [id, class, event, text, @RefOtherCompName]
+        #compName DerivedHTMLComponent.java
+
+        [id, class, event, text, @RefOtherCompName]
+        #compName DerivedHTMLComponent.java
+
+    [id, class, event, text, @RefOtherCompName]
+    #compName DerivedHTMLComponent.java

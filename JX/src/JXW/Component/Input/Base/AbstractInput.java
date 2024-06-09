@@ -1,4 +1,4 @@
-package JXW.Component.Input;
+package JXW.Component.Input.Base;
 
 import JXW.Component.Comp;
 
@@ -7,9 +7,8 @@ public class AbstractInput extends Comp {
         super("input", "");
         this.addAttr("type",type);
     }
-    public AbstractInput(String type, String id) {
-        super("input", "");
+    public AbstractInput(String type, String text) {
+        super("input", text);
         this.addAttr("type",type);
-        this.id(id);
     }
 }
