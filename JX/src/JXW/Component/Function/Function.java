@@ -34,7 +34,7 @@ public class Function extends Comp {
     private void generateFunction(){
         String func = "";
 
-        if(this.args.length == 0)
+        if(this.args == null)
             func += "function " + this.name + "()";
         else
             func += "function " + this.name + "(" + getArgString() + ")" + "{ code }";
@@ -42,5 +42,9 @@ public class Function extends Comp {
         func = func.replace("code", this.code);
 
         this.setContent(func);
+    }
+
+    public String funky(){
+        return this.code;
     }
 }

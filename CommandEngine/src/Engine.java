@@ -40,7 +40,11 @@ public class Engine {
 
 
     private void buildImpl(){
+        // read every classFile in comp
+        File folderComponent = new File("./comp/");
 
+        // for each file generate html
+        // fetch in index
     }
 
     private void newProjectImpl(String arg) {
