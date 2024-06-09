@@ -1,7 +1,7 @@
 package JXW.Component;
 
 import Abstract.HTML;
-import JXW.Event.Component;
+import JXW.Component.Function.Event.Component;
 
 public abstract class Comp extends HTML implements Component {
 

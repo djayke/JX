@@ -2,7 +2,7 @@ import Abstract.XML;
 import JXW.Component.Basic.Button;
 import JXW.Component.Container.Page;
 import JXW.Component.Container.Panel;
-import JXW.Component.Input.Base.TextInput;
+import JXW.Component.Input.TextInput;
 
 
 public class Main {

@@ -1,4 +1,4 @@
-package JXW.Component.Input.Base;
+package JXW.Component.Input;
 
 public class checkBox extends AbstractInput {
     public checkBox() {

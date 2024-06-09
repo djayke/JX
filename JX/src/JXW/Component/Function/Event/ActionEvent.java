@@ -1,4 +1,4 @@
-package JXW.Event;
+package JXW.Component.Function.Event;
 
 public interface ActionEvent {
     void oninput();

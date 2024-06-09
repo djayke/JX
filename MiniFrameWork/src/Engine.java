@@ -45,10 +45,14 @@ public class Engine {
 
     private void newProjectImpl(String arg) {
         if(generateBaseDirectory(arg)){
-            status(new Succes());
+            status("Success...");
         }else{
-            status(new Error());
+            status("Error folder already exist...");
         }
+    }
+
+    private void status(String msg) {
+            System.out.println(msg);
     }
 
     private boolean generateBaseDirectory(String _directoryName){
@@ -86,9 +90,5 @@ public class Engine {
 
         return true;
     }
-
-    private void status(StateCommand cmd) {}
-    private abstract class StateCommand { }
-    private class Succes extends StateCommand { }
-    private class Error extends StateCommand { }
+    
 }
