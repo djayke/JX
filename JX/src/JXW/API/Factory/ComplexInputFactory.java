@@ -1,10 +1,9 @@
-package JXW.Component.Factory;
+package JXW.API.Factory;
 
 import JXW.Component.Comp;
-import JXW.Component.Input.Base.*;
 import JXW.Component.Input.Complex.*;
 
-public class ComplexInputFactory extends AbstractFactory{
+public class ComplexInputFactory extends AbstractFactory {
     @Override
     Comp getComp(String compType) {
         switch(compType){

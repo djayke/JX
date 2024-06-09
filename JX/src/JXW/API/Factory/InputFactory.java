@@ -1,8 +1,7 @@
-package JXW.Component.Factory;
+package JXW.API.Factory;
 
 import JXW.Component.Comp;
 
-//TODO BUILDER?
 public class InputFactory {
 
     private static AbstractFactory getFactory(boolean isContainer){

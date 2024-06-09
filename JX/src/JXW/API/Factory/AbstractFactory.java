@@ -1,4 +1,4 @@
-package JXW.Component.Factory;
+package JXW.API.Factory;
 
 import JXW.Component.Comp;
 
