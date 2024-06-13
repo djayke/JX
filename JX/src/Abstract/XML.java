@@ -142,7 +142,7 @@ public class XML {
             ctx.append(c.toString());
             ctx.append("\n");
         }
-        return ctx.toString();
+        return ctx.toString().trim();
     }
 
     @Override
@@ -175,11 +175,12 @@ public class XML {
             return Factory.instance;
         }
 
-        private Factory(){
+        public Factory(){
             render = new XML();
         }
 
         public XML build(){
+            System.out.println("<?>"+render);
             return render;
         }
 

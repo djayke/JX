@@ -1,0 +1,8 @@
+Page[#index,     .[class1 class2]]
+{
+    Panel[#idDiv,     .[container]]
+    {
+        Button[#idBtn,          .[mybtn],       event[onmouseclick=func()], text="ok"];
+        TextInput[#idInput,     .[myinput]];
+    }
+}

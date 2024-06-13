@@ -10,6 +10,11 @@ public class Container extends Comp {
         super(type, text);
     }
 
+    public Container(String type) {
+        super(type, "");
+    }
+
+
     public void addComp(Comp c){
         this.addComponent(c);
     }

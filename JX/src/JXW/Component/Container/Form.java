@@ -1,28 +1,23 @@
 package JXW.Component.Container;
 
-import JXW.Component.Comp;
-import JXW.Component.Input.AbstractInput;
 
-public class Form extends Comp {
+public class Form extends Container {
+
+    Url url;
+
     public Form()
     {
         super("form", "");
-        this.addComponent(addSubmit());
     }
 
-    private Submit addSubmit()
+    private void addAction(String _action)
     {
-        return new Submit();
+        this.addAttr("action", _action);
     }
 
-    /**
-     * Classe interne pour le submit form
-     */
-    private class Submit extends AbstractInput
+    public void action(Url url)
     {
-        public Submit()
-        {
-            super("submit");
-        }
+        this.url=url;
     }
+
 }

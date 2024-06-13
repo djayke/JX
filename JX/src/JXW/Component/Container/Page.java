@@ -2,8 +2,13 @@ package JXW.Component.Container;
 
 public class Page extends Container {
 
+    public Page() {
+        super("div");
+        this.hide();
+    }
+
     public Page(String name) {
-        super("div", "");
+        super("div");
         this.id(name);
         this.hide();
     }

@@ -4,7 +4,6 @@ import Abstract.HTML;
 import JXW.Component.Function.Event.Component;
 
 public abstract class Comp extends HTML implements Component {
-
     private boolean enable = true;
 
     public Comp(String type, String text) {
@@ -25,13 +24,15 @@ public abstract class Comp extends HTML implements Component {
     @Override
     public void show() {
         enable=false;
-        this.addAttribute("display", "block;");
+        this.addClass("d-content");
+        this.removeClass("d-none");
     }
 
     @Override
     public void hide() {
         enable=true;
-        this.addAttribute("display", "none;");
+        this.addClass("d-none");
+        this.removeClass("d-content");
     }
 
 }

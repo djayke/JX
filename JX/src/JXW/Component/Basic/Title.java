@@ -9,7 +9,8 @@ public class Title extends Comp {
         HEADER,
         NORMAL,
         MEDIUM,
-        SMALL
+        SMALL,
+        TEXT
     }
 
     public static Title createTitle(Type t, String text){
@@ -18,11 +19,12 @@ public class Title extends Comp {
             case NORMAL -> {return new Title("h2", text);}
             case MEDIUM -> {return new Title("h3", text);}
             case SMALL -> {return new Title("h4", text);}
+            case TEXT -> {return new Title("p", text);}
             default -> {return new Title("p", text);}
         }
     }
 
-    private Title(String type, String text) {
+    public Title(String type, String text) {
         super(type, text);
     }
 

@@ -25,6 +25,7 @@ public class Attribute {
         for(String val:value){
             v.append(val).append(" ");
         }
+        v.deleteCharAt(v.length() - 1);
         v.append("\"");
         return v.toString();
     }

@@ -27,6 +27,10 @@ public class List extends Comp {
         Arrays.stream(items).toList().forEach(i->this.addComponent(new Item(i)));
     }
 
+    public void AddComponentToList(Comp i){
+        this.addComponent(new Item(i));
+    }
+
     private class Item extends Comp{
         public Item(String text) {
             super("li", text);

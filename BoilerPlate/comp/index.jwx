@@ -1,0 +1,11 @@
+    [index, @body]
+    #index index.java
+
+    [idDiv, @index]
+    #idDiv div.java
+
+    [idBtn, click, Ok!, @idDiv]
+    #idBtn monbtn.java
+
+    [idInput, @idDiv]
+    #idInput moninput.java
